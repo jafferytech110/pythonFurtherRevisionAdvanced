@@ -68,6 +68,8 @@ class Shape:
     def __init__(self, color, filled):
         self.color = color
         self.filled = filled
+    def desctibe(self):
+        print(f"It is {self.color}.")
 
 class Circle(Shape):
     def __init__(self,color,filled, radius):
@@ -82,3 +84,5 @@ class Square(Shape):
 circle = Circle("red", True, 5)
 
 print(circle.color)
+circle.desctibe()
+
